@@ -1,0 +1,59 @@
+.athletes {
+    .wrapper {
+        padding-top: 125px;
+        padding-bottom: 125px;
+        position: relative;
+    }
+    .text {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        text-align: right;
+
+        padding-bottom: 50px;
+
+        p {
+            max-width: 730px;
+            margin-left: auto;
+        }
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+    }
+
+    .card {
+        position: relative;
+
+        .card__content {
+            display: none;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), black);
+            color: var(--color-white);
+
+            display: flex;
+            justify-content: space-between;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .card__content:hover {
+            display: flex;
+        }
+
+        h3 {
+            margin-top: auto;
+            padding-left: 20px;
+        }
+
+        .icon {
+            margin-top: auto;
+            padding-right: 20px;
+        }
+    }
+}

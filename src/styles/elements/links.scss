@@ -20,13 +20,13 @@ a {
 .link {
     text-transform: uppercase;
 
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--font-tertiary);
     font-weight: 700;
     font-size: 14px;
 }
 
 .logo {
-    font-family: 'Nunito', sans-serif;
+    font-family: var(--font-primary);
     font-weight: 900;
     font-size: typo(20px, 40px);
 }
@@ -40,5 +40,5 @@ a {
     font-weight: 900;
     font-size: 14px;
 
-    font-family: 'Nunito', sans-serif;
+    font-family: var(--font-primary);
 }

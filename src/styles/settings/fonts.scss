@@ -5,11 +5,12 @@
 :root {
     --font-primary: 'Nunito', sans-serif;
     --font-secondary: 'PT Sans', sans-serif;
+    --font-tertiary: 'Open Sans', sans-serif;
 
-    --font-size-content: 1.8rem;
+    --font-size-content: 18px;
 
     /// Grosseur des textes
     --font-size-h1: #{typo(50px, 100px)};
-    --font-size-h2: 7rem;
-    --font-size-h3: 3.5rem;
+    --font-size-h2: #{typo(30px, 50px)};
+    --font-size-h3: #{typo(20px, 40px)};
 }
