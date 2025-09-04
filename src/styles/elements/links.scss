@@ -42,3 +42,8 @@ a {
 
     font-family: var(--font-primary);
 }
+
+.button:hover{
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
