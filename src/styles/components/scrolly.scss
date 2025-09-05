@@ -1,0 +1,62 @@
+.has-js {
+  [data-scrolly] {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease-out;
+
+    &.is-active {
+      opacity: 1;
+      visibility: visible;
+      transform: translate(0,0) rotateX(0);
+    }
+  }
+
+  [data-scrolly="fromBottom"] {
+    transform: translateY(60px);
+  }
+
+  [data-scrolly="fromTop"] {
+    transform: translateY(-60px);
+  }
+
+  [data-scrolly="fromLeft"] {
+    transform: translateX(-60px);
+  }
+
+  [data-scrolly="fromRight"] {
+    transform: translateX(60px);
+  }
+
+  [data-scrolly="flipFromBottom"] {
+    transform: rotateX(180deg);
+    transition: all 0.8s ease-out;
+  }
+
+  [data-scrolly="blurIn"] {
+    filter: blur(5px);
+    transition: all 0.6s ease-out;
+  }
+
+  [data-scrolly="typing"] {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: width 1.5s steps(20) 0.3s;
+
+    &.is-active {
+      width: 100%;
+      opacity: 1;
+      visibility: visible;
+      position: relative;
+    }
+
+    &.is-active::after {
+      content: "|";
+      display: inline-block;
+      animation: blink 0.7s steps(2, start) infinite;
+      color: var(--color-white);
+    }
+  }
+}
